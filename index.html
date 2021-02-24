@@ -9,14 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!--CSS-->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+  <!-- container #1 -->
     <div class="container-fluid">
     
         <div class="row d-flex justify-content-center sticky-top bg-dark">
-            <!--Navigation Bar-->
+            <!-- Navigation Bar-->
             <nav class="navbar navbar-dark navbar-expand-lg justify-content-center" style="background-color: #352e29;">
                 <a class="navbar-brand" href="#beverages">
                     <button type="button" class="btn btn-outline-light">Beverages</button></a>
@@ -25,18 +26,26 @@
                 <a class="navbar-brand" href="#offsales">
                     <button type="button" class="btn btn-outline-light">Off-Sales</button></a>
             </nav>
-        </div> 
-
-        <div class="row m-5 p-2"><a id="beverages"></a></div>
-
-        <!-- jumbotron drinks -->
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-12">
-                <div class='jumbotron text-center' id="bannerBeverages">
-                    <h1 class="display-4">BEVERAGES</h1>
-                </div>
-            </div>
         </div>
+    
+    </div>
+
+    <!-- banner sugarbowl -->
+    <img src="img/sugarbowl.jpg" id="bannerSugarbowl">
+
+    <div class="row"><a id="beverages"></a></div>
+
+      <!-- jumbotron beverages -->
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+              <div class='jumbotron text-center' id="bannerBeverages">
+                  <h1 class="display-4 p-5">BEVERAGES</h1>
+              </div>
+          </div>
+      </div>
+
+      <!-- container #2 -->
+    <div class="container-fluid">
 
         <div class="row">
             <div class="col-md-12 text-center">
@@ -106,6 +115,18 @@
                                     <td><strong>Townsquare Forged Amber Rye Ale</strong><br>473 mL / 5.2%</td>
                                     <td>8.25</td>
                                   </tr>
+                                  <tr>
+                                    <td><strong>Feature Belgians</strong><br>Ask your server</td>
+                                    <td>Market Price</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Feature Radler</strong><br>See our chalkboard</td>
+                                    <td>Market Price</td>
+                                  </tr>
+                                  <tr>
+                                    <td><strong>Feature Sour</strong><br>See our chalkboard</td>
+                                    <td>Market Price</td>
+                                  </tr>
                                 </tbody>
                               </table>
 
@@ -120,7 +141,7 @@
                       </h2>
                       <div id="collapseTapsFeatureBottles" class="accordion-collapse collapse" aria-labelledby="tapsFeatureBottles" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <p>See our chalkboard for our rotating selection.</p>
+                          <p><b>See our chalkboard for our rotating selection.</b></p>
                         </div>
                       </div>
                     </div>
@@ -442,13 +463,13 @@
             </div>
         </div>
 
-        <div class="row m-5 p-2"><a id="food"></a></div>
+        <div class="row m-4"><a id="food"></a></div>
 
         <!-- jumbotron food -->
         <div class="row d-flex justify-content-center">
             <div class="col-md-12">
                 <div class='jumbotron text-center' id="bannerFood">
-                    <h1 class="display-4">FOOD</h1>
+                    <h1 class="display-4 p-5">FOOD</h1>
                 </div>
             </div>
         </div>
@@ -645,23 +666,51 @@
             </div>
         </div>
 
-        <div class="row m-5 p-2"><a id="offsales"></a></div>
+        <div class="row m-4"><a id="offsales"></a></div>
 
         <!-- jumbotron off-sales -->
         <div class="row d-flex justify-content-center">
             <div class="col-md-12">
                 <div class='jumbotron text-center' id="bannerOffsales">
-                    <h1 class="display-4">OFF-SALES</h1>
+                    <h1 class="display-4 p-5">OFF-SALES</h1>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-5 pb-5">
             <div class="col-md-12 text-center">
-                <p>Online menu coming soon!</p>
+
+              <div class="accordion" id="offsales">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="offsales">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOffsales" aria-expanded="false" aria-controls="collapseOffsales">
+                      Click Me!
+                    </button>
+                  </h2>
+                  <div id="collapseOffsales" class="accordion-collapse collapse" aria-labelledby="headingOffsales" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      
+                      <table class="table table-striped" style="text-align:left;">
+                        <tbody>
+                          <tr>
+                            <td><strong>Mixed 4-Pack</strong><br>Any Alberta Brewery</td>
+                            <td>23</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Mixed 6-Pack (Belgian Passport)</strong><br>Assorted Belgian varieties (ask your server)</td>
+                            <td>55.99</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
         </div>
-
+        
     </div>
 
     <!--bootstrap bundle with popper-->
