@@ -22,3 +22,7 @@
     background-size: cover;
     color: #FFFFFF;
 }
+
+.accordion-button {
+    display:block;
+}

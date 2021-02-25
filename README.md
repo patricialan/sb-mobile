@@ -1,2 +1,2 @@
-# Sugarbowl Menu For Mobile
-Mobile-friendly web app for the restaurant Sugarbowl's menu. 
+# sb-mobile-experiment
+Duplicate web app for restaurant Sugarbowl's online menu to test new features
